@@ -17,6 +17,9 @@ openvas-mkcert-client -n om –i
 
 No need to restart the client for this to work. You need to do this in linuxZoo every time you boot with a fresh image...
 
+find the gsad service listening port by using netstat -tulpn | grep LISTEN
+And then open the port on local host on a browser to do the following 
+
 In OpenVAS, create the following:
 
     A port called "port ssh" which scans only port 22
