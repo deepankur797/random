@@ -7,3 +7,9 @@ nmap <ip> -p <port> -sV
 tcpdump -vni eth0 port 80
 #https://www.napier.ac.uk/people/gordon-russell
 
+#nmap nse 
+locate *.nse
+
+## example of using nmap nse script
+ nmap --script /usr/share/nmap/scripts/smb-os-discovery 192.168.1.1 -p 137-139
+ 
