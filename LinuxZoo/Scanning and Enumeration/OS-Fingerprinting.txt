@@ -1,0 +1,9 @@
+#os fingerprinting need one open and one close port
+nmap <ip> -p <port range> -sV -O
+
+#os fingerprinting with xprobe more reliable
+
+xporbe2 <ip>
+
+#nmap uses more packets for detecting the fingerprint
+
