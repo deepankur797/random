@@ -1,0 +1,28 @@
+
+
+We would like you to try a scan on the target using OpenVAS. However note that this can take about 15 minutes, so we will interleave this with the target booting process. Do not start the scan until told...
+
+Start openvas in applications>Kali Linux>OpenVAS>openvas start.
+
+Dont worry if the manager appears to fail to start. It has probably started and it is openvas which is mistaken...
+
+
+
+
+Before logging into openVAS, you need to reset the openVAS certificates. Normally this is not needed, but in LinuxZoo the current certificates have expired. To reset the certificates simply run the following command:
+
+openvasmd --rebuild
+openvas-mkcert -f -q
+openvas-mkcert-client -n om –i
+
+No need to restart the client for this to work. You need to do this in linuxZoo every time you boot with a fresh image...
+
+In OpenVAS, create the following:
+
+    A port called "port ssh" which scans only port 22
+    A target called "target1" which targets the IP identified above and scanns only the port "port ssh".
+    A task "ssh scan" which scans "target1". Make the Maximum concurrently executed NVTs per host 20.
+    ONCE ALL CHECKS PASSED you can start the task "ssh scan". PASS THE CHECKS FIRST
+    The scan takes about 15 minutes. While waiting for the answers go onto the next question in the meantime.
+
+The username is "admin" and the password is "kali".
