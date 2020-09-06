@@ -1,0 +1,1 @@
+nmap -PE -oG /root/out1 -sn 10.200.0.1-20
