@@ -1,0 +1,9 @@
+# use netcat to find the banners
+netcat <ip> <port>
+#to find the service details on a port
+nmap <ip> -p <port> -sV
+#Use CVE database online to find common vulnerabilites
+# just to remind tcp dump command
+tcpdump -vni eth0 port 80
+#https://www.napier.ac.uk/people/gordon-russell
+
