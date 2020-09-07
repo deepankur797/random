@@ -29,3 +29,6 @@ In OpenVAS, create the following:
     The scan takes about 15 minutes. While waiting for the answers go onto the next question in the meantime.
 
 The username is "admin" and the password is "kali".
+
+
+Tip :- try stopping and starting service of openvas once the task once is scheduled
