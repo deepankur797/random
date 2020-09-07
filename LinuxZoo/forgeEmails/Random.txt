@@ -1,0 +1,2 @@
+# start the email server
+service exim4 start
